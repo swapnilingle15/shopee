@@ -1,0 +1,54 @@
+@import 'style/mixins';
+
+.shopee-form-input {
+    margin-bottom: var(--unnamed-pixel-20);
+    min-height: 84px;
+
+    .label-section {
+        display: flex;
+        justify-content: space-between;
+
+        span {
+            font-size: var(--unnamed-font-size-12);
+        }
+
+    }
+
+    label {
+        display: block;
+        margin-bottom: var(--unnamed-pixel-4);
+        font-weight: 600;            
+    }
+
+    input {
+        width: -webkit-fill-available;
+        box-shadow: none;
+        border-radius: var(--unnamed-pixel-8);
+        outline: none;
+        border-style: solid;
+        border-color: #ccc;
+        padding: var(--unnamed-pixel-8) var(--unnamed-pixel-16);
+
+        &::placeholder {
+            color: #ccc;
+        }
+
+        &.is-danger {
+            border-color: #EC5B62;
+        }
+    }
+
+    .is-danger {
+        margin-top: 4px;
+        color: #EC5B62;
+        font-size: 12px;
+    }
+
+    @include desktop {
+        margin-right: var(--unnamed-pixel-20);
+    }
+
+    @include tablet {
+        margin-right: var(--unnamed-pixel-20);
+    }
+}

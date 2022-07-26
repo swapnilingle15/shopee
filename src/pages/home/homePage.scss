@@ -1,0 +1,121 @@
+@import 'style/mixins';
+
+@mixin desktop-tablet-view {
+    .home-page-feature-banner {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: var(--unnamed-pixel-44);
+
+        .banner-image-section {
+            float: right !important;
+        }
+
+        .banner-content-section {
+            padding: 0 var(--unnamed-pixel-44);
+            height: 350px;
+            text-align: left;
+
+            span {
+                display: block;
+                margin: var(--unnamed-pixel-16) 0;
+                font-size: var(--unnamed-font-size-14);
+            }
+
+            p {
+                font-size: var(--unnamed-font-size-12);
+            }
+
+            .button-section {
+                display: flex;
+            }
+        }
+    }
+}
+
+.home-page {
+    .categories {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -66px;
+        width: 84%;
+        margin: 0 auto;
+        z-index: 997;
+    }
+
+
+    .home-page-feature-banner {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: var(--unnamed-pixel-36);
+
+        .banner-content-section {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: var(--unnamed-pixel-44) 0;
+            position: relative;
+
+            p {
+                font-size: var(--unnamed-font-size-12);
+            }
+
+            .button-section {
+                display: flex;
+            }
+
+            .horizontal-bar {
+                position: absolute;
+                bottom: 0;
+            }
+        }
+
+        .banner-image-section {
+            background-image: url('../../assets/images/banner-image.jpg');
+            height: 350px;
+            background-position: top;
+            background-size: cover;
+            margin: 0;
+        }
+    }
+
+    @include desktop {
+        @include desktop-tablet-view();
+
+        .marker-section {
+            left: -48px !important;
+            top: initial !important;
+        }
+    }
+
+    @include tablet {
+        @include desktop-tablet-view();
+    }
+
+    .home-banner-section,
+    .home-banner-section-mb {
+        .home-banner-content {
+            position: relative;
+            padding: var(--unnamed-pixel-32) 0;
+
+            .marker-section {
+                position: absolute;
+                left: var(--unnamed-pixel-16);
+                top: -20px;
+                text-align: center;
+
+                .horizontal-bar {
+                    margin-top: var(--unnamed-pixel-8);
+                }
+            }
+
+            .btn-secondary {
+                background: transparent;
+                color: var(--white);
+                border-color: var(--white);
+                padding: var(--unnamed-pixel-12) 0;
+                border-radius: var(--unnamed-pixel-16);
+            }
+        }
+    }
+}

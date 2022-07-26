@@ -1,0 +1,25 @@
+.shipping-method-readonly {
+    padding: var(--unnamed-pixel-16);
+    border: var(--unnamed-border-solid);
+
+    .header {
+        margin-bottom: var(--unnamed-pixel-12);
+        display: flex;
+        justify-content: space-between;
+
+        span:not(.edit-button) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .user-details-section {
+        color: var(--gray-d1);
+    }
+}
+
+.is-danger {
+    margin-top: 4px;
+    color: #EC5B62;
+    font-size: 12px;
+}
