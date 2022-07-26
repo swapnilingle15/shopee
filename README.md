@@ -1,5 +1,5 @@
 # Visit Shopee App
-This website is hosted at [Shopee Demo App](https://single15.github.io/shopee/).
+This website is hosted at [Shopee Demo App](https://swapnilingle15.github.io/shopee/).
 
 ## About Shopee App
 
